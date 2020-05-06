@@ -2,4 +2,11 @@
 
 To view the website clone the repo, and ensure all the required dependencies are installed by running ```$ npm install``` in the /frontend directory
 
-Once that is completed run ```$ python manage.py runserver``` or ```$ py manage.py runserver``` if in on a Windows Machine
+Run the server using the command in the base directory (/veerai_application) ```$ python manage.py runserver``` or ```$ py manage.py runserver``` if on a windows machine
+
+Once server is running, open a new terminal and run the following commands:
+```
+   $ cd frontend
+   $ npm start
+   ```
+   
