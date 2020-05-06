@@ -17,16 +17,18 @@ class Message extends React.Component {
         }
     }
 
+    // handles the GET request that pulls the keyword from the REST API to update state
     componentDidMount() {
+        // API link
         fetch('http://127.0.0.1:8000/api/')
             .then(res => res.json())
             .then(result => {
                 if (result) {
                     result.forEach(item => {
+                        // sets only the most recent keyword (for purposes of setting new keyword) to the keyword state
                         this.setState({
                             keyword: item.keyword
                         });
-                        console.log(item.keyword)
                     })
                 }
                 else {
@@ -38,11 +40,13 @@ class Message extends React.Component {
         console.log(this.state.keyword)
     };
 
+    // checks if the submitted message was the same as the one stored in the REST API
     handleFormSubmit = (e) => {
         e.preventDefault();
         const guessedWord = e.target.elements.message.value;
         if (guessedWord === this.state.keyword) {
             this.setState({
+                // setting opacity for message displays
                 opacityTrue: '1',
                 opacityFalse: '0',
                 opacitySubmitted: '0'
@@ -50,6 +54,7 @@ class Message extends React.Component {
         }
         else {
             this.setState({
+                // setting opacity for message displays
                 opacityTrue: '0',
                 opacityFalse: '1',
                 opacitySubmitted: '0'
@@ -57,14 +62,19 @@ class Message extends React.Component {
         }
     };
 
+    // extra step to set the value yourself
     handleChange = async (e) => {
         e.preventDefault();
+
+        // sets submitted message to constant 'change'
         const change = e.target.elements.change.value;
 
         this.setState({
+            // display purposes
            opacitySubmitted: '1'
         });
 
+        // post request made to REST API
         return axios.post('http://127.0.0.1:8000/api/list-create/', {
                 name: 'noname',
                 email: 'noemail@email.com',
