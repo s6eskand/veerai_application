@@ -12,6 +12,7 @@
 /frontend/build
 
 .idea/
+db.sqlite3
 
 # misc
 .DS_Store
