@@ -123,3 +123,67 @@ h1 {
   padding: 20px;
 }
 
+.form-header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10%;
+}
+
+/*form {*/
+/*  width: 600px;*/
+/*  background: transparent;*/
+/*  border: none;*/
+/*  outline: none;*/
+/*  border-bottom: 1px solid #1AEFC6;*/
+/*  color: #fff;*/
+/*  font-size: 18px;*/
+/*  margin-bottom: 16px;*/
+/*}*/
+
+form {
+  margin: 50px 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #f9f9f9;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+  padding-left: 20px;
+  margin-left: 60px;
+}
+
+input {
+  height: 45px;
+}
+
+#contact-form input[type = "submit"] {
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #f9f9f9;
+  padding: 14px 20px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+#contact-form input[type = "submit"]:hover{
+  background: #f9f9f9;
+}
+

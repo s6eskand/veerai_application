@@ -3,10 +3,15 @@ from rest_framework.generics import (
     RetrieveAPIView,
     CreateAPIView,
     DestroyAPIView,
-    UpdateAPIView
+    UpdateAPIView,
+    ListCreateAPIView,
 )
 from form.models import Form
 from .serializers import FormSerializer
+
+class FormListCreateView(ListCreateAPIView):
+    queryset = Form.objects.all()
+    serializer_class = FormSerializer
 
 class FormListView(ListAPIView):
     queryset = Form.objects.all()

@@ -81,8 +81,11 @@ WSGI_APPLICATION = 'veerai_application.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'veerai',
+        'USER': 'postgres',
+        'PASSWORD': 'Ozilrox22',
+        'HOST': 'localhost'
     }
 }
 
@@ -130,8 +133,8 @@ STATICFILES_DIRS = [
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISIION_CLASSES': [
-        'rest_framework.permissions.AllowAny'
+    'DEFAULT_PERMISSION_CLASSES': [
+         'rest_framework.permissions.AllowAny',
     ]
 }
 
