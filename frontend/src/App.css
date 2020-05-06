@@ -187,3 +187,24 @@ input {
   background: #f9f9f9;
 }
 
+.message {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #f9f9f9;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+  padding-left: 20px;
+  margin-left: 60px;
+}
+
+.guessed {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+

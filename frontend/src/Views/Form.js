@@ -37,6 +37,9 @@ class Form extends React.Component {
     render() {
         return(
             <div>
+                <Link to="/">
+                    <FaHome className="button" size={40} style={{position: 'absolute', top: '40px', left: '-600px'}}/>
+                </Link>
                 <div className="form-header">
                     <h1>A Simple Contact Form, Nothing Special</h1>
                     <br/>
