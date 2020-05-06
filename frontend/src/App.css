@@ -1,0 +1,125 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(87deg, #FF5757 15%, #ff9999 94%);
+}
+
+h1 {
+  font-size: 42px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+}
+
+.challenges {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /*padding-top: 10%;*/
+}
+
+.icon1 {
+  /*padding-right: 100px;*/
+  color: #0d0d0d;
+  border: 2px solid #f9f9f9;
+  padding: 10px 20px;
+  margin: 80px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.icon1:hover{
+  background: #f9f9f9;
+  transform: scale(1.25);
+}
+
+.icon2 {
+  color: #0d0d0d;
+  border: 2px solid #f9f9f9;
+  padding: 10px 20px;
+  margin: 80px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.icon2:hover {
+  background: #f9f9f9;
+  transform: scale(1.25);
+}
+
+.icon3 {
+  color: #0d0d0d;
+  border: 2px solid #f9f9f9;
+  padding: 10px 20px;
+  margin: 80px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.icon3:hover {
+  background: #f9f9f9;
+  transform: scale(1.25);
+}
+
+.button-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.button {
+  color: #0d0d0d;
+  border: 2px solid #f9f9f9;
+  padding: 10px 20px;
+  margin-right: 700px;
+  margin-left: 700px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.25);
+}
+
+.card {
+  display: flex;
+  background: #f1f1f1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 40px 270px;
+  border-radius: 24px
+}
+
+.card img {
+  border-radius: 24px
+}
+
+.card-title {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px
+}
+
+.card-text {
+  text-align: center;
+  padding: 20px;
+}
+
