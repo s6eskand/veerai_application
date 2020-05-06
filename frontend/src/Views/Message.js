@@ -10,8 +10,8 @@ class Message extends React.Component {
             keyword: '',
             isCorrect: false,
             isAlreadyThere: true,
-            opacityTrue: '1',
-            opacityFalse: '1',
+            opacityTrue: '0',
+            opacityFalse: '0',
             opacitySubmitted: '0',
             transition: 'opacity 0.75s ease-in'
         }
