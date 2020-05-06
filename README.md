@@ -17,4 +17,5 @@ Once server is running, open a new terminal and run the following commands:
 $ cd veerai_application/frontend
 $ npm start
 ```
-   
+
+Note that if you are on a windows machine, windows uses backslashes (\) not forward slashes (/)
