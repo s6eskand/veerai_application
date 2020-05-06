@@ -14,7 +14,7 @@ if on a windows machine
 
 Once server is running, open a new terminal and run the following commands:
 ```
-$ cd frontend
+$ cd veerai_application/frontend
 $ npm start
 ```
    
