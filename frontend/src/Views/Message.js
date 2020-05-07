@@ -96,7 +96,7 @@ class Message extends React.Component {
                     <br/>
                     <h3>Input the correct message!</h3>
                     <br/>
-                    <p>Who should be hired for this position?</p>
+                    <p>What is my full name?</p>
                 </div>
                 <div className="contact-form" style={{paddingBottom: '0'}}>
                     <form action="" method="post" onSubmit={e => this.handleFormSubmit(e)}>
@@ -110,7 +110,7 @@ class Message extends React.Component {
                     <h3>Tough luck! Hint: the answer is <i>{this.state.keyword}</i></h3>
                 </div>
                 <div style={{paddingTop: '50px'}}>
-                    <h3 style={{display: 'flex', justifyContent: 'center'}}>If you want, you can even set the word yourself (wow Sam goes above and beyond)</h3>
+                    <h3 style={{display: 'flex', justifyContent: 'center'}}>If you want, you can even set the word yourself</h3>
                     <div className="contact-form">
                         <form action="" method="post" onSubmit={e => this.handleChange(e)}>
                             <input name="change" className="form-control" type="text" placeholder="Enter the message here..."/>
