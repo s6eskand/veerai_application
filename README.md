@@ -24,3 +24,4 @@ Video of me using the website just in case it does not run on your local machine
 
 https://vimeo.com/415774581
 
+Video also shows the updated Postgres Table on form submit as well as the REST API updating
