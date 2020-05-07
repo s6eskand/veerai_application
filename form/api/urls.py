@@ -1,5 +1,6 @@
 from django.urls import path
 
+# standard imports for CRUD REST API, including FormListCreateView which allows for GET and POST methods
 from .views import (
     FormListView,
     FormCreateView,
@@ -8,6 +9,7 @@ from .views import (
     FormListCreateView
 )
 
+# url patterns to show the actual API using the django rest framework
 urlpatterns = [
     path('', FormListView.as_view()),
     path('create/', FormCreateView.as_view()),

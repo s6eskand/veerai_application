@@ -9,6 +9,8 @@ from rest_framework.generics import (
 from form.models import Form
 from .serializers import FormSerializer
 
+# creating the actual classes for the API views so that they render with the correct data being displayed
+
 class FormListCreateView(ListCreateAPIView):
     queryset = Form.objects.all()
     serializer_class = FormSerializer
