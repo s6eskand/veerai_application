@@ -19,3 +19,8 @@ $ npm start
 ```
 
 Note that if you are on a windows machine, windows uses backslashes not forward slashes
+
+Video of me using the website just in case it does not run on your local machine can be found here:
+
+https://vimeo.com/415758705
+
