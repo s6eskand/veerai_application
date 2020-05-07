@@ -7,7 +7,8 @@ class Form extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            opacitySubmitted: '0',
+            transition: 'opacity 0.75s ease-in'
         }
     }
 
@@ -20,9 +21,10 @@ class Form extends React.Component {
         const email = e.target.elements.email.value;
         const phone = e.target.elements.phone.value;
 
-        console.log(name);
-        console.log(email);
-        console.log(phone);
+        // simply to display the submit message once submitted
+        this.setState({
+            opacitySubmitted: '1'
+        });
 
         // post to /api/list-create/
         return axios.post('http://127.0.0.1:8000/api/list-create/', {
@@ -56,13 +58,15 @@ class Form extends React.Component {
                         <input type="submit" className="form-control submit" value="SEND INFO"/>
                     </form>
                 </div>
-                {/*<div className="form">*/}
-                {/*    <form action="">*/}
-                {/*        <input type="text" name="name" placeholder="Enter your full name" required/>*/}
-                {/*        <input type="email" name="email" placeholder="Enter your email" required/>*/}
-                {/*        <input type="number" name="phone_number" placeholder="Enter your phone number" required/>*/}
-                {/*    </form>*/}
-                {/*</div>*/}
+                <div className="guessed" style={{transition: this.state.transition, opacity: this.state.opacitySubmitted}}>
+                    <h3>Your info was submitted and the database was updated.</h3>
+                    <br/>
+                    <p>To see the database and REST API updating, check out the video of me going through the challenge,</p>
+                    <br/>
+                    <p>Link in the Github Repository README and <a href="https://vimeo.com/415774581">here</a></p>
+                    <br/>
+
+                </div>
             </div>
         )
     }

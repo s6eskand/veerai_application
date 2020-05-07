@@ -57,6 +57,7 @@ class Button extends React.Component {
                 }
             );
 
+        // check that the array has been populated with the correct data, aka the API call works
         console.log(this.state.movies)
     };
 

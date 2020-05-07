@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+// Card class is easy made instead of just adding to the Button.js view for scalability purposes. It is good practice to separate small components
+// such as this one from larger views when working on larger scale projects
 class Card extends React.Component {
     constructor(props) {
         super(props);

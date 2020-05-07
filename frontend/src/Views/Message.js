@@ -47,6 +47,7 @@ class Message extends React.Component {
         if (guessedWord === this.state.keyword) {
             this.setState({
                 // setting opacity for message displays
+                // in this case, guess was right, so display the respective message
                 opacityTrue: '1',
                 opacityFalse: '0',
                 opacitySubmitted: '0'
@@ -55,6 +56,7 @@ class Message extends React.Component {
         else {
             this.setState({
                 // setting opacity for message displays
+                // in this case, guess was wrong, so display the respective message
                 opacityTrue: '0',
                 opacityFalse: '1',
                 opacitySubmitted: '0'
@@ -70,7 +72,7 @@ class Message extends React.Component {
         const change = e.target.elements.change.value;
 
         this.setState({
-            // display purposes
+            // display the submitted message
            opacitySubmitted: '1'
         });
 
@@ -103,9 +105,11 @@ class Message extends React.Component {
                         <input name="message" className="form-control" type="text" placeholder="Enter the message here..."/>
                     </form>
                 </div>
+                {/*only to display on correct guess*/}
                 <div className="guessed" style={{opacity: this.state.opacityTrue, transition: this.state.transition, paddingTop: '-20px'}}>
                     <h3>You guessed correctly! How'd you know?</h3>
                 </div>
+                {/*only to display on incorrect guess as well as give answer*/}
                 <div className="guessed" style={{opacity: this.state.opacityFalse, transition: this.state.transition}}>
                     <h3>Tough luck! Hint: the answer is <i>{this.state.keyword}</i></h3>
                 </div>
@@ -117,6 +121,7 @@ class Message extends React.Component {
                         </form>
                     </div>
                 </div>
+                {/*only to display on submit*/}
                 <div className="guessed" style={{opacity: this.state.opacitySubmitted, transition: this.state.transition}}>
                     <h3>Submitted! Now just refresh the page and retry your guess!</h3>
                 </div>

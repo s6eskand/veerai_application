@@ -13,6 +13,15 @@ h1 {
   font-size: 42px;
 }
 
+a {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+a:hover {
+  color: #f9f9f9;
+}
+
 .home {
   display: flex;
   flex-direction: column;
