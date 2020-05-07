@@ -20,9 +20,9 @@ class Form extends React.Component {
         const email = e.target.elements.email.value;
         const phone = e.target.elements.phone.value;
 
-        // console.log(name);
-        // console.log(email);
-        // console.log(phone);
+        console.log(name);
+        console.log(email);
+        console.log(phone);
 
         // post to /api/list-create/
         return axios.post('http://127.0.0.1:8000/api/list-create/', {

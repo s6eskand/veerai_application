@@ -4,5 +4,5 @@ from django.db import models
 class Form(models.Model):
     name = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
-    phone_number = models.IntegerField(default=0)
+    phone_number = models.CharField(max_length=12)
     keyword = models.CharField(max_length=100, default='Sam Eskandar')
